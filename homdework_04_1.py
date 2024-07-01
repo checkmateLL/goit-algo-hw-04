@@ -9,8 +9,8 @@ def total_salary(path):
                 # stripped of new line characters
                 # and comverted to integer
                 int(re.sub('^.*?,', '', sal).strip()) for sal in sfile.readlines()
-            ]
-            
+            ]            
+        
             # Calculating sum of all list items
             total_s = sum(salary_separate)
 
