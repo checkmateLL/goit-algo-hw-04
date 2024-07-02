@@ -64,13 +64,17 @@ def main():
         elif command == "hello":
             print("How can I help you?")
         elif command == "add":
-            print(add_contact(args, contacts))
+            result = add_contact(args, contacts)
+            print(result)
         elif command == "change":
-            print(change_contact(args, contacts))
+            result = change_contact(args, contacts)
+            print(result)
         elif command == "phone":
-            print(show_phone(args, contacts))
+            result = show_phone(args, contacts)
+            print(result)
         elif command == "all":
-            print(all_contacts(args, contacts))
+            result = all_contacts(args, contacts)
+            print(result)
         else:
             print("Invalid command.")
 
